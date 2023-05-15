@@ -19,8 +19,8 @@ builder.Services.AddAuthentication(options =>
     .AddCookie()
     .AddGoogle(GoogleDefaults.AuthenticationScheme, options =>
     {
-        options.ClientId = "866326638315-gi6uejmaau6eoe3dcu5mk7ul79mn845s.apps.googleusercontent.com";
-        options.ClientSecret = "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";
+        options.ClientId = builder.Configuration["OpenID:Google:ClientID"];
+        options.ClientSecret = builder.Configuration["OpenID:Google:ClientSecret"];
     });
 
 var app = builder.Build();
