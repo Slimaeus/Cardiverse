@@ -10,9 +10,9 @@ jobs:
         uses: actions/setup-dotnet@v3
         with:
           dotnet-version: 7.0.x
-      - run: dotnet build Cardiverse.Card.API
       - name: Install dependencies
-        run: dotnet restore
+        run: dotnet restore    
+      - run: dotnet build ./Cardiverse.Card.API
       - name: Run
-        run: dotnet run Cardiverse.Card.API
+        run: dotnet run ./Cardiverse.Card.API
         
