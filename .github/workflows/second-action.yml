@@ -16,5 +16,5 @@ jobs:
         run: dotnet restore    
       - run: dotnet build ./Cardiverse.Card.API
       - name: Run
-        run: dotnet run ./Cardiverse.Card.API
+        run: dotnet run --project ./Cardiverse.Card.API
         
