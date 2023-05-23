@@ -6,6 +6,8 @@ jobs:
     steps:
       - name: Get code
         uses: actions/checkout@v3
+      - name: Get folders
+        run: ls
       - name: Setup dotnet
         uses: actions/setup-dotnet@v3
         with:
