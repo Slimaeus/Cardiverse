@@ -35,7 +35,7 @@ app.MapGet("/api/Cards/{id}", (int id) =>
     };
 });
 
-app.MapPost("/api/Cards", (Card card) =>
+app.MapPost("/api/Cards", (Card xcard) =>
 {
     _cards.Add(card);
     return Results.Created($"/api/Cards/{card.Id}", card);
