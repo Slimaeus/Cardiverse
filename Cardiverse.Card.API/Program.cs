@@ -35,10 +35,23 @@ app.MapGet("/api/Cards/{id}", (int id) =>
     };
 });
 
-app.MapPost("/api/Cards", (Card xcard) =>
+app.MapPost("/api/Cards", (Card card) =>
 {
     _cards.Add(card);
     return Results.Created($"/api/Cards/{card.Id}", card);
+});
+
+app.MapPut("/api/Cards/{id}", (int id, Card card) =>
+{
+    if (id != card.Id)
+    {
+        return Results.BadRequest();
+    }
+    var currentCard = _cards.SingleOrDefault(x => x.Id == id);
+    if (currentCard != null)
+        _cards.Remove(currentCard);
+    _cards.Add(card);
+    return Results.NoContent();
 });
 
 app.Run();
