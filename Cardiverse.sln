@@ -5,7 +5,11 @@ VisualStudioVersion = 17.5.33627.172
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Cardiverse.API", "Cardiverse.API\Cardiverse.API.csproj", "{AB8E70AC-6104-4682-9274-A5D017DC93E0}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Cardiverse.Web", "Cardiverse.Web\Cardiverse.Web.csproj", "{64AC1509-784B-418C-B3CF-5D767AAF879D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Cardiverse.Web", "Cardiverse.Web\Cardiverse.Web.csproj", "{64AC1509-784B-418C-B3CF-5D767AAF879D}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Cardiverse.Card", "Cardiverse.Card", "{94DD080F-A54F-4852-AF68-0168C3EB5B82}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Cardiverse.Card.API", "Cardiverse.Card.API\Cardiverse.Card.API.csproj", "{FEBC641B-5F31-4303-9C9D-E996BAD0E360}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,9 +25,16 @@ Global
 		{64AC1509-784B-418C-B3CF-5D767AAF879D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{64AC1509-784B-418C-B3CF-5D767AAF879D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{64AC1509-784B-418C-B3CF-5D767AAF879D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FEBC641B-5F31-4303-9C9D-E996BAD0E360}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FEBC641B-5F31-4303-9C9D-E996BAD0E360}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FEBC641B-5F31-4303-9C9D-E996BAD0E360}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FEBC641B-5F31-4303-9C9D-E996BAD0E360}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{FEBC641B-5F31-4303-9C9D-E996BAD0E360} = {94DD080F-A54F-4852-AF68-0168C3EB5B82}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {EAB2A7E6-91A8-419A-8B46-1590D674C292}

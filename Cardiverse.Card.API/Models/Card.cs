@@ -1,4 +1,4 @@
-﻿namespace Cardiverse.API.Models;
+﻿namespace Cardiverse.Card.API.Models;
 
 public class Card
 {
